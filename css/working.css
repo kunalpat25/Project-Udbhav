@@ -1,0 +1,49 @@
+.dfd
+{
+	margin: 25px 50px;
+        text-align: justify;
+        width: 1000px;
+}
+.dfd img
+{
+	width:470px;
+	height:300px;
+        position:absolute;
+        top:550px;
+        left:1080px;
+
+}
+
+.dfd img:hover
+{
+transform: scale(1.1);
+}
+
+
+.dfd h3
+{
+ position:absolute;
+ top:850px;
+ left:1100px;
+}
+
+.div-title
+{
+    width: 98%;
+    height: 35px;
+    border-top: rgb(10, 200, 30) 3px solid;
+    vertical-align: top;
+    margin: 0px 0px 0px 14px;
+}
+.div-title table
+{
+    max-width: 450px;
+    border: 0;
+}
+.div-title table td
+{
+    background-color:rgb(10, 200, 30);
+    padding: 0px 0px 0px 8px;
+    color: white; 
+    font-size: 30px;
+}

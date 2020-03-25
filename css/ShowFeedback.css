@@ -1,0 +1,311 @@
+.navbar ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 60xp;
+    overflow:hidden;
+    /*0.781 makes image transparent
+    color for previous bg= rgba(93, 238, 93, 0.781)*/
+    
+    background-color:rgb(10, 200, 30);
+}
+.navbar
+{
+    position: sticky;
+    top: 0;    
+}
+.bgimage
+{
+    opacity: 0.9;
+    filter:alpha(opacity=70);
+}
+.navbar ul li
+{
+    border-right: 1px solid rgb(255, 255, 255);
+    float: left;    
+    
+}
+.navbar ul li :last-child
+{
+    border-right: none;
+}
+.navbar ul li a
+{
+    display: block;
+    padding: 8px;    
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    transition: ease-out 0.7s;
+    -webkit-transition: ease-out 0.7s;
+    
+}
+.navbar ul li a:hover
+{
+    background-color: rgb(1, 82, 21);
+    box-shadow: inset 0 100px 0 0 rgb(1, 82, 21);
+    cursor: pointer;
+}
+
+.navbar ul li a:active
+{
+    background-color: green;
+}
+.active
+{
+    background-color: rgb(10, 200, 30);
+}
+
+.container-div-top
+ {
+    position: relative;
+    text-align: center;
+    color:white;
+  }
+  .top-left {
+    position: absolute;
+    font-size: relative;
+    top: 8px;
+    font-family: Georgia;
+    left: 30px;
+    font-style:oblique;
+  }
+  .main-heading
+  {
+      position: absolute;
+      font-size: relative;
+      top:50px;
+      font-family: Georgia;
+      left:220px;
+      font-style:oblique;
+      
+  }
+  .main-heading h2
+  {      
+      color:white;
+      font-family: Georgia;
+      font-size: 55px;      
+  } 
+  .shadow 
+  { 
+     color: white;
+     text-shadow: 1px 1px #111111, 
+                  2px 2px #111111, 
+                  3px 3px #111111, 
+                  4px 4px #111111, 
+                  5px 5px #111111 , 
+                  6px 6px #111111;
+  }
+
+ 
+
+  .footer-div
+  {
+      background-color:rgb(10, 200, 30);
+      margin-bottom: 0;
+      height: 200px;
+      width: 100%;
+      bottom: 0;
+  }
+
+  .footer-div-top ul
+  {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width:60xp;
+    overflow:hidden;
+    /*0.781 makes image transparent
+    color for previous bg= rgba(93, 238, 93, 0.781)*/    
+    background-color:rgb(10, 200, 30);
+  }
+
+  .footer-div-top ul li
+  {
+      float: left;
+  }
+  .footer-div-top ul li a
+  {
+    display: block;
+    padding: 8px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;    
+    font-size: 20px;
+    transition: ease-out 0.6s;
+    -webkit-transition: ease-out 0.6s;
+    text-decoration: none;
+  }
+  .copyright h3
+  {      
+      color: white;
+      float: left;
+      position: relative;
+      bottom: -90;
+      left: 10;
+      margin-bottom: 0;
+  }
+
+
+
+  .stayconnected
+  {
+      color:white;
+      position: relative;
+      bottom: -50;
+        right: 10;
+      float: right;
+      width: 240px;
+      background-color: rgb(10, 200, 30);
+  }
+  .stayconnected ul li a img
+  {
+      width:25px;
+      height: 25px;
+      display: block;      
+  }
+
+  .stayconnected ul li
+  {
+    list-style-type: none;
+    padding: 10px;
+    float: right;
+  }
+
+  .stayconnected ul
+  {
+    margin: -30;   
+    margin-right: 50; 
+  }
+  .stayconnected h3
+  {
+      float:center;
+      text-align: center;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.div-main
+{
+    margin-left: 14%;
+    margin-right:14%;
+    /* margin-top: 7%; */
+    margin-bottom: 2%;
+    height: 2000px;
+}
+
+.div-title
+{
+    width: 98%;
+    height: 35px;
+    border-top: rgb(10, 200, 30) 3px solid;
+    vertical-align: top;
+    margin: 0px 0px 0px 14px;
+}
+.div-title table
+{
+    max-width: 450px;
+    border: 0;
+}
+.div-title table td
+{
+    background-color:rgb(10, 200, 30);
+    padding: 0px 0px 0px 8px;
+    color: white; 
+    font-size: 30px;
+}
+
+
+
+.div-cust-report table {
+    align-self: center;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 5%;
+  }
+  
+  .div-cust-report table td
+  {
+      font-size: 25px;
+      font-weight: 500;
+      width: auto;
+      text-align: center;
+      padding: 8;
+      border-bottom: 1px solid black;
+  }
+  .div-cust-report table th
+  {
+      font-size: 28px;
+      font-weight: 400;
+      background-color: rgba(51, 141, 51, 0.774);
+      color: white;
+      padding: 7;
+      border-bottom: 1px solid black;
+  }
+  .div-cust-report table tr:nth-child(even) 
+  {
+      background-color: #f2f2f2;
+}
+.div-cust-report table td img
+  {
+      cursor: pointer;
+      width: 30;
+      height: 30;
+  }
+  .div-cust-report table td img:hover
+  {
+      width: 32;
+      height: 32;
+      -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+ -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 255, 0, 0.67);
+-moz-box-shadow:    0px 0px 30px 0px rgba(0, 255, 0, 0.67);
+box-shadow:         0px 0px 30px 0px rgba(0, 255, 0, 0.67);
+  }
+
+  /* trial again */
+.div-cust-report table td img:last-of-type:hover{
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+ -webkit-box-shadow: 0px 0px 30px 0px rgba(232, 0, 0, 0.67);
+-moz-box-shadow:    0px 0px 30px 0px rgba(232, 0, 0, 0.67);
+box-shadow:         0px 0px 30px 0px rgba(232, 0, 0, 0.67);
+}
+  .div-cust-report table tr:hover
+{
+    background-color: rgba(176, 250, 176, 0.479);
+}
+
+.div-cust-report
+{
+    
+    float: left;
+}
+
+.div-profile
+{
+    width: 100%;
+    top: 40px;
+    position: relative;
+    margin-left: 80;
+    margin-right: 20%;
+    margin-bottom: 20%; 
+    visibility: hidden;
+    display: none;
+}

@@ -1,0 +1,39 @@
+.main
+{
+    text-align: justify;
+    align-content: justify;
+    align-items: justify;
+    align-self: justify;
+    margin-left: 17%;
+    margin-right:17%;
+    margin-top: 7%;
+    margin-bottom: 4%;
+    font-size: 18px;
+    font-weight: 400;    
+}
+.main p a
+{
+    text-decoration-color: rgb(10, 200, 30);
+    color: rgb(10, 200, 30);
+}
+
+.div-title
+{
+    width: 98%;
+    height: 35px;
+    border-top: rgb(10, 200, 30) 3px solid;
+    vertical-align: top;
+    margin: 0px 0px 0px 14px;
+}
+.div-title table
+{
+    max-width: 450px;
+    border: 0;
+}
+.div-title table td
+{
+    background-color:rgb(10, 200, 30);
+    padding: 0px 0px 0px 8px;
+    color: white; 
+    font-size: 30px;
+}

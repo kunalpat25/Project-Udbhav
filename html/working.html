@@ -1,0 +1,176 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/udbhav/css/styles.css">
+		<link rel="stylesheet" href="/udbhav/css/working.css">
+		<link rel="stylesheet" href="lightbox.min.css">
+		<script src="lightbox-plus-jquery.min.js"> </script>
+		<script src="/udbhav/js/jquery.js"></script>
+        <script src="/udbhav/js/scroll-to-top.js"></script>
+		<link rel="stylesheet" href="/udbhav/css/scroll-to-top.css">
+    </head>
+   
+        
+    <div id="head" class="container">
+            <img class="bgimage" src="/udbhav/images/grass2.jpeg" alt="udbhav" style="width:100%;height:40% ;">
+            <div id="head1" class="top-left"><h1 class="shadow" >UDBHAV PRESENTS</h1></div>
+            <div id="head2" class="main-heading"><h2 class="shadow" >AUTOMATION OF DRIP IRRIGATION</h2></div>
+        </div>
+    <div class="navbar">
+        <ul>
+            <li><a class="active" href="/udbhav/index.jsp">Home</a></li>
+            <li><a href="/udbhav/html/working.html">Working</a></li>
+            <li><a href="/udbhav/html/gallery.html">Gallery</a></li>
+            <li><a href="#">Let's Talk</a></li>
+            <li><a href="/udbhav/html/help.html">Help</a></li>
+            <li style="float:right"><a href="#">Register</a></li>
+        </ul>
+	</div>
+	<br>
+
+			<div class="div-title">
+				<table border="0" cellspacing="0" cellpadding="0">
+					<tbody>
+						<tr>
+							<td valign="middle">Working</td>
+							<td align="left"><img src="/udbhav/images/terms.jpg" width="21" height="35"></td>
+						</tr>
+					</tbody>
+				</table>
+			</div> <br>
+    <div class="main">
+        
+		<form>
+		<div class="dfd">
+			<b><font face="calibri" size="5" color="brown"> Components Used</font><br/></b>
+			<p><font face="calibri" size="4"> * Soil Moisture Sensor<br/>
+                * Submersible Water Pump<br/>		
+                * Potentiometer<br/>
+				* Relay<br/>
+				* Node MCU</font></p>
+				
+				
+			</div>
+			
+			<div  class="dfd"  "  > <b> <br/>
+			<font face="calibri" size="5" color="brown">Overall Working:</font><br/></b>
+			 <font face="calibri" size="4">
+			  An automatic plant watering system using <a href="https://en.wikipedia.org/wiki/NodeMCU"> NODEMCU </a> 
+			 microcontroller ESP32S is programmed such that it gives the interrupt signals to the motor via
+			the <a href="https://en.wikipedia.org/wiki/Relay">relay </a>. Soil moisture sensor is connected to the D13 pin 
+			to the Dev kit of ESP32S which senses the moisture content present in the soil. Whenever 
+			the soil moisture content values go down, the sensor senses the moisture change,
+			giving signal to the microcontroller so that the pump (motor) can be activated.
+			A new value is sensed by every 16 seconds. During any occurrence of error, an email
+			will be sent to the farmer’s email-id so that he will be aware of the problem. 
+			This concept can be used for automatic plant watering system. The circuit comprises 
+			an NODEMCU <a href="https://en.wikipedia.org/wiki/ESP32"> ESP32S </a>, a soil moisture sensor, a 12V motor pump,
+			a relay, a battery and a potentiometer.This automatic drip irrigation system senses the moisture content of
+			the soil using YL-69 sensor and then nodemcu32s microcontroller will fetch the data
+			from ThingSpeak server and compare the input data with the threshold value. 
+			According to the sensed value, relay with give output to motor through pin D2.
+			The output received by motor will in turn keep the motor on or off. If sensed moisture
+			is less than threshold value, then relay will give output to motor and motor accordingly 
+			will be started and Suppose, if sensed moisture is greater than threshold value, relay’s
+			output will off the motor. Here, ThingSpeak server is used for analyzing and retrieving 
+			the sensed value of crop. Another reason for using server is for the sake of troubleshooting
+			and as it is an embedded system so database is not maintained here. The troubleshooting mechanism
+			is provided by sending an email to the email-id provided at the time of registration. 
+			Project’s website will enable farmer to register his information in order to implement
+			AODI in their field. This website will also contain a static information so that the user
+			will get to know the sole purpose of automation of drip irrigation. Here, Email will be sent
+			according to conditions specified in applets created in webhooks service of  <a href="https://ifttt.com">IFTTT </a>.
+			Applets are created on if…then condition, for example: if sensor failed then send me an email at 
+			specified email-id. Email will be sent to the farmer on the specific conditions such as:<br/><br/>
+*	Sensor Failed (sensed value will be less than 500 for more than 5 times)<br/>
+*	Empty Tank (sensed value is 4095 for more than 20 times)<br/>
+*	NAN i.e. Not A Number (loose connection or connection error)</font>
+
+<div class="dfd" > 
+
+ <a href="/udbhav/images\dfd2.png" data-lightbox="dfd2" data-title="DATA FLOW"> <img src="/udbhav/images\dfd2.png" alt="not available" height="300" width="470" > </a>
+  <h3> fig: Data Flow Diagram<br/>
+       (click the picture for bigger view)</h3>
+</div>
+
+
+
+			</div>
+			
+			
+			
+			<div class="dfd" "> <b> <br/><font face="calibri" size="5" 
+			color="brown">  How Soil Moisture Sensor Contributed?</font><br/></b>
+			<font face="calibri" size="4">Soil Moisture Sensor sense the moisture of soil.here YL-69 sensor is used. 
+			It is used to detect moisture to activate a display or trigger an action.
+			When the soil is dry, the sensor's output is set high, when wet low.This sensor
+			is placed in the crop  field and continuously detect the moisture content of soil.
+			Sensod data is then passed on via Potentiometer for further Processing.</font>
+			</div>
+			
+			<div class="dfd" "> <b><br/><font face="calibri" size="5"
+			color="brown">How Submersible Water Pump Contributed?</font> <br/></b>
+			<font face="calibri" size="4">A submersible pump  is a device which has a hermetically sealed motor close-coupled
+			to the pump body.The whole assembly is submerged in the fluid to be pumped.
+			The main advantage of this type of pump is that it prevents pump cavitation.
+			The pumpis placed inside the water tank and supplies water conditionally to the
+			crop field's main water line.It receives signal from Node MUC.If NodeMcu receive high 
+			value from soil moisture sensor then it will send ON signal to pump otherwise it will send OFF signal. </font> 
+			</div>
+			
+			<div class="dfd" ><b><br/><font face="calibri" size="5"
+			color="brown">How  Potentiometer Contributed?</font><br/></b>
+			<font face="calibri" size="4">Potentiometer (YL-38) works as interface for YL-69 probes. The sensor comes with small PCB
+			board fitted with LM393 comparator chip and potentiometer.Input pins for the 
+			sensor is also present on this PCB.The YL-38 ranges from 0 to 45% volumetric 
+			water content in soil.  A potentiometer i.e. YL-38 works as intermediary between sensor
+			and esp32s board. As, sensor gives output in voltage, potentiometer converts this output to
+			readable form which can be understood by esp32s board.</font> 
+			</div>
+			
+			<div class="dfd" ><b><br/><font face="calibri" size="5" 
+			color="brown">How Relay Contributed?</font><br/></b>
+			<font face="calibri" size="4">A relay is an electrically operated switch.
+			. Relays are used where it is necessary to control a circuit by a separate low-power
+			signal, or where several circuits must be controlled by one signal.According to the 
+			sensed value, relay with give output to pump through pin . The output received by pump
+			will in turn keep the motor on or off.</font> 
+			</div>
+			
+			<div class="dfd">
+			<font face="calibri" size="4">
+			<h4>
+			still have query..?
+			<a href="#"> <br/>Let's Talk..!</a>
+			</h4>
+			</font> 
+			</div>
+            
+      </div>
+	  </form>
+	  
+	  
+				  
+      <div id="footer" class="footer-div">
+          <div id="footer-div-top" class="footer-div-top">
+              <ul>
+                  <li><a href="#">About Us&nbsp;&nbsp;&nbsp;|</a></li>
+                  <li><a href="#">Contact Us&nbsp;&nbsp;&nbsp;|</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li style="float:right;"><a href="mailto:projectudbhav5@gmail.com">projectudbhav5@gmail</a></li>
+              </ul>
+          </div>
+          <div id="footer-div-bottom" class="footer-div-bottom">
+            <span class="copyright"><h3 >&copy; 2019 Udbhav. All Rights Reserved</h3></span>
+            <span class="stayconnected"><h3>Stay Connected</h3>  <br> 
+                <ul>
+                <li><a href="https://www.youtube.com/channel/UCP0cz4_fZfS6NXnZ6W3sszQ"><img  src="/udbhav/images/youtube-logo.png" alt="youtube"></a></li>
+             <li><a href="https://twitter.com/ProjectUdbhav"><img src="/udbhav/images/twitter-logo.png" alt="twitter"></a> </li>
+             <li><a href="https://www.facebook.com/Udbhav-355349738522932/?modal=admin_todo_tour"><img src="/udbhav/images/fb-logo.png" alt="facebook"></a></li>
+             <li><a href="#"><img src="/udbhav/images/google-logo.png" alt="google"></a></li>
+            </ul>
+            </span>
+          </div>
+		  
+		   <a id="back2Top" title="Back to top" href="#">&#10148;</a>
+      </div>
+</html>

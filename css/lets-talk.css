@@ -1,0 +1,127 @@
+.div-info
+{
+    display: block;
+    margin-top: 1%;
+    font-size: 25px;
+    padding:1em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+}
+
+.div-info h1{
+    color: rgb(8, 155, 22);
+}
+
+.div-info h4
+{
+    padding-top: 2px;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(165, 42, 42,0.9);
+
+}
+
+.div-query {
+    display: block;
+    
+    position: relative;
+    
+    background-color: rgba(10, 200, 30, 0.4);
+    margin-bottom: 5%;
+    
+    font-size: 20px;
+    
+    width: 250px;
+    padding: 1em;
+    font-weight: 600;
+    height: auto;
+    margin-top: 3%;
+}
+
+.textbox-style 
+{
+    color: rgb(46, 40, 40);
+    border-radius: 4px 5px;
+    font-size: 15px;
+    width: 220px;
+    height: 23px;
+    margin-top: 0px;
+    border: 1px solid #ffffff;
+    background-color: rgba(256,256,256,0.5);
+    font-weight: 600;
+    padding: 10px;
+}
+
+.textarea-style
+{
+    color: rgb(46, 40, 40);
+    border-radius: 4px 5px;
+    font-size: 15px;
+    width: 220px;
+    height: 100px;
+    margin-top: 0px;
+    border: 1px solid #ffffff;
+    background-color: rgba(256,256,256,0.5);
+    font-weight: 600;
+    padding: 10px;
+}
+
+.button-style 
+{
+    border-radius: 7px 8px;
+    font-size: 15px;
+    width: 220px;
+    height: 30px;
+    margin-top: 0px;
+    background-color: rgb(32, 219, 13);
+    font-weight: 600;
+}
+
+.div-title
+{
+    margin-top:7%;
+    width: 98%;
+    height: 35px;
+    border-top: rgb(10, 200, 30) 3px solid;
+    vertical-align: top;
+    margin: 0px 0px 0px 14px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    margin-top: 5%;
+}
+.div-title table
+{
+    max-width: 450px;
+    border: 0;
+    
+}
+.div-title table td
+{
+    background-color:rgb(10, 200, 30);
+    padding: 0px 0px 0px 8px;
+    color: white; 
+    font-size: 30px;
+}
+
+.que-ans
+{
+    border:rgb(10, 200, 30);
+    border-style: solid;
+    display: block;
+    width: 500px;
+    height: 300px;
+    align-self: center;
+}
+
+.showname{
+    visibility: hidden;
+    display: none;
+}
+
+.showque
+{
+    visibility: hidden;
+    display: none;
+}

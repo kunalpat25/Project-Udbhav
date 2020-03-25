@@ -1,0 +1,34 @@
+.main object
+{
+    scroll-behavior: unset;
+    height: 1000px;
+    width: 800px;
+}
+
+.main
+{
+    height:1200;
+}
+
+
+
+.div-title
+{
+    width: 98%;
+    height: 35px;
+    border-top: rgb(10, 200, 30) 3px solid;
+    vertical-align: top;
+    margin: 0px 0px 0px 14px;
+}
+.div-title table
+{
+    max-width: 450px;
+    border: 0;
+}
+.div-title table td
+{
+    background-color:rgb(10, 200, 30);
+    padding: 0px 0px 0px 8px;
+    color: white; 
+    font-size: 30px;
+}

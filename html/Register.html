@@ -1,0 +1,198 @@
+<html>
+
+<head>
+    <title>
+        Registration form
+    </title>
+    
+    <link rel="stylesheet" href="/udbhav/css/Register.css">
+    <link rel="stylesheet" href="/udbhav/css/styles.css">
+    <script src="/udbhav/js/register-validation.js"></script>
+    <link rel="stylesheet" href="/udbhav/css/scroll-to-top.css">
+    <script src="/udbhav/js/jquery.js"></script>
+    <script src="/udbhav/js/register-ajax.js"></script>
+    <script src="/udbhav/js/cancel-reg.js"></script>
+
+    <style>
+.stayconnected
+{
+    bottom: -40;
+}
+.simple-form a
+{
+    float:right;
+    text-decoration: underline;
+    color:rgb(10,200,30);
+    font-size: 30px;    
+    margin-right: 20%;
+}
+    </style>
+</head>
+
+
+
+
+
+<div id="head" class="container">
+    <img class="bgimage" src="/udbhav/images/grass2.jpeg" alt="udbhav" style="width:100%;height:40% ;">
+    <div id="head1" class="top-left">
+        <h1 class="shadow">UDBHAV PRESENTS</h1>
+    </div>
+    <div id="head2" class="main-heading">
+        <h2 class="shadow">AUTOMATION OF DRIP IRRIGATION</h2>
+    </div>
+</div>
+<div class="navbar">
+    <ul>
+        <li><a class="active" href="/udbhav/index.jsp">Home</a></li>
+        <li><a href="/udbhav/html/working.html">Working</a></li>
+        <li><a href="/udbhav/html/gallery.html">Gallery</a></li>
+        <li><a href="/udbhav/html/lets-talk.html">Let's Talk</a></li>
+        <li><a href="/udbhav/html/help.html">Help</a></li>
+        <li style="float:right"><a href="/udbhav/html/Register.html  ">Register</a></li>
+    </ul>
+</div>
+
+<body>
+
+    
+
+        <div class="main">
+            
+            <center>
+                 <form action="/udbhav/jsp/Registration.jsp" method="POST">
+                <div id="MainContent" class="simple-form">
+                        
+                    <h1>Registration Form</h1>
+                    <h4>*Only valid for drip irrigated farms</h4>
+                    <input name="TxtFName" type="text" id="TxtFName" title="Enter Your first name"
+                        class="name-textbox-style" placeholder="First Name" required=""> &nbsp&nbsp&nbsp
+                    <input name="TxtLName" type="text" id="TxtLName" title="Enter Your last name"
+                        class="name-textbox-style" placeholder="Last Name" required=""/><br /> <br />
+
+                        <input name="TxtUsername" type="text" id="TxtUsername" title="Create a unique username"
+                        class="textbox-style" placeholder="Username" onfocusout="checkUsername()" required=""><div id="div-unique-unm" class="div-unique-unm"><br></div> 
+
+                    <input name="TxtMobno" type="number" id="TxtMobno" title="Enter Your Mobile number"
+                        class="textbox-style" class="textbox-style" placeholder="Mobile number" required=""/><br /> <br />
+
+                    <input name="TxtEmail" type="email" id="TxtEmail" title="Enter Your Email Id" class="textbox-style"
+                        placeholder="Email ID" required=""/><br /><br />
+
+                    <input name="TxtDate" type="date" id="TxtDate" title="Enter Your Date Of Birth"
+                        class="textbox-style" placeholder="Date of Birth" required=""/><br /> <br />
+
+                     <span>Gender:</span><input id="RdBtnMale" type="radio" name="Gender"
+                            value="male"> <span>Male</span><input id="RdBtnFemale" type="radio" name="Gender"
+                            value="female"><span>Female</span><br /><br />
+
+                            
+                        
+                    <select name="DdlState" id="DdlState" title="Select your State" class="ddl-style"
+                         onchange="loadDist()">
+                        <option value="-1">State</option>
+                        <option value="	JAMMU & KASHMIR	">JAMMU & KASHMIR </option>
+                        <option value="	HIMACHAL PRADESH">HIMACHAL PRADESH </option>
+                        <option value="	PUNJAB	"> PUNJAB </option>
+                        <option value="	CHANDIGARH">CHANDIGARH </option>
+                        <option value="	UTTARANCHAL	"> UTTARANCHAL </option>
+                        <option value="	HARYANA	"> HARYANA </option>
+                        <option value="	DELHI	"> DELHI </option>
+                        <option value="	RAJASTHAN	"> RAJASTHAN </option>
+                        <option value="	UTTAR PRADESH	"> UTTAR PRADESH </option>
+                        <option value="	BIHAR	"> BIHAR </option>
+                        <option value="	SIKKIM	"> SIKKIM </option>
+                        <option value="	ARUNACHAL PRADESH	"> ARUNACHAL PRADESH </option>
+                        <option value="	NAGALAND	"> NAGALAND </option>
+                        <option value="	MANIPUR	"> MANIPUR </option>
+                        <option value="	MIZORAM	"> MIZORAM </option>
+                        <option value="	TRIPURA	"> TRIPURA </option>
+                        <option value="	MEGHALAYA	"> MEGHALAYA </option>
+                        <option value="	ASSAM	"> ASSAM </option>
+                        <option value="	WEST BENGAL	"> WEST BENGAL </option>
+                        <option value="	JHARKHAND	"> JHARKHAND </option>
+                        <option value="	ORISSA	"> ORISSA </option>
+                        <option value="	CHHATTISGARH	"> CHHATTISGARH </option>
+                        <option value="	MADHYA PRADESH	"> MADHYA PRADESH </option>
+                        <option value="	GUJARAT	"> GUJARAT </option>
+                        <option value="	DAMAN & DIU	"> DAMAN & DIU </option>
+                        <option value="	DADRA & NAGAR HAVELI	"> DADRA & NAGAR HAVELI </option>
+                        <option value="	MAHARASHTRA	"> MAHARASHTRA </option>
+                        <option value="	ANDHRA PRADESH	"> ANDHRA PRADESH </option>
+                        <option value="	KARNATAKA	"> KARNATAKA </option>
+                        <option value="	GOA	"> GOA </option>
+                        <option value="	LAKSHADWEEP	"> LAKSHADWEEP </option>
+                        <option value="	KERALA	"> KERALA </option>
+                        <option value="	TAMIL NADU	"> TAMIL NADU </option>
+                        <option value="	PONDICHERRY	"> PONDICHERRY </option>
+                        <option value="	ANDAMAN & NICOBAR ISLANDS	"> ANDAMAN & NICOBAR ISLANDS </option>
+                    </select><br><br>
+
+                    <div id="div-district" class="div-district" onchange="loadTaluka()">
+                                           
+                    </div> 
+
+                    <div id="div-taluka" class="div-taluka">
+
+                    </div>
+
+                    <input name="TxtCrop" type="text" id="TxtCrop" title="Crop grown in your farm" class="textbox-style"
+                        placeholder="Crop Name" required=""/><br /><br>
+
+                        <input name="TxtArea" type="text" id="TxtArea" title="Farm irrigation area which is needed to be automated" class="textbox-style"
+                        placeholder="Farming area" required=""/><br /><br>
+
+                    <input type="submit" name="BtnSubmit" value="Submit" id="BtnSubmit" class="button-style" /> <br><br>
+                    
+                </div>
+            </form>  
+            </center>
+            
+
+        </div>
+
+        <a href="javascript:showCancelDiv()" class="cancel-link-style">Cancel Registration?</a>
+        <div id="div-cancel-registration" class="div-cancel-reg">     
+                    
+                        <h1>Cancel here</h1><br><br>
+                        <input type="text" name="uname" id="TxtUname" required="" class="cancel-textbox-style" placeholder="Username" title="Enter username or emailID">
+                        <br><br><br>
+                        <textarea name="reason" id="TxtReason" cols="30" rows="5" class="cancel-textarea-style" placeholder="Why do you want to cancel registration?" title="Please specify the reason." required=""></textarea>                        
+                        <br><br>
+                        <input type="submit" value="Cancel" class="cancel-button-style" onclick="cancelReg()">
+              <span id="message" class="span-message"></span>
+                    
+        </div>
+
+    
+    <div id="footer" class="footer-div">
+        <div id="footer-div-top" class="footer-div-top">
+            <ul>
+                <li><a href="#">About Us&nbsp;&nbsp;&nbsp;|</a></li>
+                <li><a href="/udbhav/html/contact-us.html">Contact Us&nbsp;&nbsp;&nbsp;|</a></li>
+                <li><a href="#">Blog&nbsp;&nbsp;&nbsp;|</a></li>
+                <li><a href="/udbhav/html/termsandco.html">Terms and Conditions</a></li>
+                <li style="float:right;"><a href="mailto:projectudbhav5@gmail.com">projectudbhav5@gmail</a></li>
+            </ul>
+        </div>
+        <div id="footer-div-bottom" class="footer-div-bottom">
+            <span class="copyright">
+                <h3>&copy; 2019 Udbhav. All Rights Reserved</h3>
+            </span>
+            <span class="stayconnected">
+                <h3>Stay Connected</h3> <br>
+                <ul>    
+                    <li><a href="https://www.youtube.com/channel/UCP0cz4_fZfS6NXnZ6W3sszQ"><img src="/udbhav/images/youtube-logo.png" alt="youtube"></a></li>
+                    <li><a href="https://twitter.com/ProjectUdbhav"><img src="/udbhav/images/twitter-logo.png" alt="twitter"></a> </li>
+                    <li><a href="https://www.facebook.com/Udbhav-355349738522932/?modal=admin_todo_tour"><img src="/udbhav/images/fb-logo.png" alt="facebook"></a></li>
+                    <li><a href="#"><img src="/udbhav/images/google-logo.png" alt="google"></a></li>
+                </ul>
+            </span>
+        </div>
+    </div>
+
+
+    <a id="back2Top" title="Back to top" href="#">&#10148;</a>
+</body>
+
+</html>

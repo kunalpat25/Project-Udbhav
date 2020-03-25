@@ -1,0 +1,64 @@
+ .navbar
+ {
+	 position:fixed;
+ }
+ .slide-left
+ {
+	 top:80%;
+	 background-color:rgb(10, 200, 30);
+       left:20%;  
+ }
+  .slide-right
+ {
+	 top:80%;
+	 background-color:rgb(10, 200, 30);
+     
+ }
+ 
+
+ .mySlides
+ {
+	     display:none;
+		overflow:hidden;
+	     border-radius:20;
+		 z-index:99;
+		 top:50%;
+		 left:160%;
+ }
+ .mySlides1
+ {
+	 display:block;
+	 border-radius:20;
+	visibility:visible;
+ }
+ .txt
+ {opacity:0.2;
+	 font-size:30px;
+	 color:rgb(10, 200, 30);
+	 overflow:hidden;
+ }
+ .img1
+ {
+	 background-image:green.jpg;
+	 width:35%;
+	 height:30%;
+	 opacity:0.9;
+ }
+ .img
+{
+opacity:0.5;
+}
+.info
+{
+	text-align:justify;
+}
+
+.main {
+    background-image: url("images/bg-white.jpg");
+    background-repeat: no-repeat;    
+    background-attachment: fixed;
+    background-size: cover;
+    height: 1000x;
+	margin: 55px 50px;
+  
+  }

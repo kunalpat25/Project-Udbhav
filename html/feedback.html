@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Give your Feedback</title>
+<!-- for-mobile-apps -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+<!-- //for-mobile-apps -->
+<link href='//fonts.googleapis.com/css?family=Amaranth:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Josefin+Slab:400,100,100italic,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<link href="/udbhav/css/feedback.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+<div class="content">
+	<h1>Feedback Form</h1>
+	<div class="main">
+		<form name="frm" action="/udbhav/jsp/SaveFeedback.jsp" method="POST">
+			<h5>Your Name</h5>
+				<input type="text" name="name" value="Type here" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Type here';}" required="">
+			<h5>Email</h5>
+				<input type="text" name="email" value="yourname@example.com" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'yourname@example.com';}" required="">
+			<h5>Your Feedback <span>( Tips and Guidelines ) </span> </h5>	
+				<textarea name="feedback" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Please write genuine reviews';}" required="">Please write genuine reviews</textarea>
+		
+		<h5>Overall Experience</h5>
+			<div class="radio-btns">
+					<div class="swit">								
+						<div class="check_box_one"> <div class="radio"> <label><input type="radio" id="RdBtnExp" name="experience" checked="" value="Very Good"><i></i>Very Good</label> </div></div>
+                        <div class="check_box"> <div class="radio"> <label><input type="radio" id="RdBtnExp" name="experience" value="Good"><i></i>Good</label> </div></div>
+						<div class="check_box"> <div class="radio"> <label><input type="radio" id="RdBtnExp" name="experience" value="Fair"><i></i>Fair</label> </div></div>
+						<div class="check_box"> <div class="radio"> <label><input type="radio" id="RdBtnExp" name="experience" value="Poor"><i></i>Poor</label> </div></div>
+						<div class="clear"></div>
+					</div>
+			</div>
+		<h5>User Interface</h5>
+			<div class="radio-btns">
+					<div class="swit">								
+						<div class="check_box_one"> <div class="radio1"> <label><input type="radio" id="RdBtnUI" name="userInterface" checked="" value="Very Good"><i></i>Very Good</label> </div></div>
+                        <div class="check_box"> <div class="radio1"> <label><input type="radio" id="RdBtnUI" name="userInterface" value="Good"><i></i>Good</label> </div></div>
+						<div class="check_box"> <div class="radio1"> <label><input type="radio" id="RdBtnUI" name="userInterface" value="Fair"><i></i>Fair</label> </div></div>
+						<div class="check_box"> <div class="radio1"> <label><input type="radio" id="RdBtnUI" name="userInterface" value="Poor"><i></i>Poor</label> </div></div>
+						<div class="clear"></div>
+					</div>
+			</div>
+		<h5>Features</h5>
+			<div class="radio-btns">
+					<div class="swit">								
+						<div class="check_box_one"> <div class="radio2"> <label><input type="radio" id="RdBtnFeatures" name="features" checked="" value="Very Good"><i></i>Very Good</label> </div></div>
+                        <div class="check_box"> <div class="radio2"> <label><input type="radio" id="RdBtnFeatures" name="features" value="Good"><i></i>Good</label> </div></div>
+						<div class="check_box"> <div class="radio2"> <label><input type="radio" id="RdBtnFeatures" name="features" value="Fair"><i></i>Fair</label> </div></div>
+						<div class="check_box"> <div class="radio2"> <label><input type="radio" id="RdBtnFeatures" name="features" value="Poor"><i></i>Poor</label> </div></div>
+						<div class="clear"></div>
+					</div>
+			</div>
+		<h5>Navigation</h5>
+			<div class="radio-btns">
+					<div class="swit">								
+						<div class="check_box_one"> <div class="radio3"> <label><input type="radio" id="RdBtnNavigation" name="navigation" checked="" value="Very Good"><i></i>Very Good</label> </div></div>
+                        <div class="check_box"> <div class="radio3"> <label><input type="radio" id="RdBtnNavigation" name="navigation" value="Good"><i></i>Good</label> </div></div>
+						<div class="check_box"> <div class="radio3"> <label><input type="radio" id="RdBtnNavigation" name="navigation" value="Fair"><i></i>Fair</label> </div></div>
+						<div class="check_box"> <div class="radio3"> <label><input type="radio" id="RdBtnNavigation" name="navigation"><i></i>Poor</label> </div></div>
+						<div class="clear"></div>
+					</div>
+			</div>
+		<h5>Please rate us!</h5>
+			<span class="starRating">
+				<input id="rating5" type="radio" name="rating" value="5" checked>
+				<label for="rating5">5</label>
+				<input id="rating4" type="radio" name="rating" value="4">
+				<label for="rating4">4</label>
+				<input id="rating3" type="radio" name="rating" value="3" >
+				<label for="rating3">3</label>
+				<input id="rating2" type="radio" name="rating" value="2">
+				<label for="rating2">2</label>
+				<input id="rating1" type="radio" name="rating" value="1">
+				<label for="rating1">1</label>
+			</span>
+		
+			
+				<input type="submit" value="Send Feedback">
+		</form>
+	</div>
+
+</div>
+
+</body>
+</html>
